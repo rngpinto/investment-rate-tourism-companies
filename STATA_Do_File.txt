@@ -1,0 +1,76 @@
+*Replace the variable name
+
+*Transform the variables from alphanumeric to numeric:
+destring, dpcomma replace
+
+*Statistical analysis of the study variables
+
+sum
+tabstat, s(n mean sd min max range variance median count sum)
+
+
+*Format variables:
+format pib pass_des %10.0f
+
+
+*Descriptive graphics:
+
+tsline invest, title(Rate of Investment Companies (accommodation and catering)) subtitle(Portugal)
+tsline desp_lazer desp_visita desp_neg, title(Average daily expenditure per tourist by main reason) subtitle(Portugal)
+
+
+*Linear correlation between all variables for a better understanding of the variables:
+correlate pib dorm pass_des desp_lazer desp_visit desp_neg
+pwcorr
+
+*Estimate multiple linear regression
+regress invest pib dorm pass_des desp_lazer desp_visita desp_neg
+
+
+* Study multicollinearity:
+regress dorm pass_des pib desp_lazer desp_visita desp_neg
+regress pass_des pib desp_lazer desp_visit desp_neg dorm
+
+regress desp_lazer pass_des pib desp_visita desp_neg
+regress desp_visita pass_des pib desp_lazer desp_neg
+
+regress dorm pass_des pib desp_visita desp_neg
+regress pass_des pib desp_visita desp_neg dorm
+regress gd desp_visita desp_neg dorm pass_des
+regress desp_visita desp_neg dorm pass_des pib
+regress desp_neg dorm pass_des pib desp_visita
+
+*Eliminate dorm and leisure expend
+
+
+*Linear correlation between all variables for a better understanding of the variables:
+correlate invest gdp pass_des desp_visita desp_neg
+correlate gdp pass_des desp_visita desp_neg
+
+*Estimate multiple linear regression
+regress invest gd pass_des desp_visita desp_neg
+
+
+*Export the obtained data to a word file:
+asdoc regress invest pib pass_des desp_visita desp_neg
+asdoc sum invest pib pass_des desp_visita desp_neg
+asdoc tabstat invest gdp pass_des desp_visita desp_neg, s(n mean sd min max range variance median count sum)
+asdoc correlate invest pib pass_des desp_visita desp_neg
+
+
+
+*Determining the value of Y - predicted value:
+predict i_pred
+tsline i_pred, title(Expected Investment Rate Companies (accommodation and catering)) subtitle(Portugal)
+
+list invest i_pred
+tsline invest i_pred, title(Actual vs Expected Investment Rate Companies (accommodation & rest.)) subtitle(Portugal)
+
+*display(-20.2188 +0.3047145*pib -0.8570672*pass_des +0.0118805*desp_visita +0.1437459*desp_neg)
+display(-20.2188 +0.3047145*211.5 -0.8570672*12.0 +0.0118805*28 +0.1437459*50)
+
+*Calculate residuals:
+predict reside_invest, residuals
+
+*Evaluate residuals:
+scatter reside_invest i_pred, title(Relation between predicted values ​​and residuals)

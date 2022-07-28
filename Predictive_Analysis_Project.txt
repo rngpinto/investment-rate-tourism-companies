@@ -1,0 +1,20 @@
+Project Summary | Predictive Analysis for Management
+
+
+The purpose of this project is to apply an econometric management model in order to analyze several relevant factors related to tourism in Portugal, and to analyze their impact on the investment rate of companies in the tourism sector.
+Thus, it is intended to analyze which are the most determining factors which drive the investment rate of companies in the tourism sector, which include accommodation and catering and similar ones.
+
+Tables were taken from the PORDATA website within the period 2004-2020, whose variables were combined in order to obtain relevant and logical metrics from an economic point of view. 
+The multiple linear regression model applied in STATA program will thus allow the modeling of the relationship between the investment rate of companies as a function of independent variables such as GDP, Average expenditure per tourist, Overnight stays in tourist accommodation per 100 inhabitants and Passengers disembarked at main airports (in millions of passengers). 
+
+This study will therefore be useful for management, as it will allow one to assess the most important factors (among those considered) which drive in the investment process of companies in the accommodation and catering sector. These insights may also set an important guide in future decisions.
+
+Given the huge difficulties the tourism sector has been dealing with due to the pandemic caused by the SARS-CoV-2 virus since 2020, it becomes even more essential the following measures:
+- companies have reliable estimates of the passengers’ arrival in our country and their seasonality, in order to be able to plan their investments and assess the best time of year to do so; 
+- companies accurately assess their investments and based on existing data relating to the economy, for a more rational and less intuitive decision-making. 
+Regarding the structure of the present study, it is composed by the introduction (with the presentation of the objective of the study), the description of the applied methodology (data collection and processing, data statistical analysis and definition of the applied model) and finally the analysis of the results and conclusions of the study.
+
+
+
+
+Keywords: Multiple Linear Regression, Econometric Models, Predictive Analysis, Turismo de Portugal
