@@ -14,7 +14,7 @@ Analyzing several relevant factors related to tourism in Portugal;
 Analyzing in the STATA statistical software which variables more influence the investment rate of companies in the catering, accommodation and similar sectors
 
 
-## Considered Variables 
+## Considered Variables:
 
 PORDATA Platform; period between 2004 and 2020:
 
