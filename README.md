@@ -30,3 +30,12 @@ Average expenditure per tourist for the following main travel reasons (in euros)
 Overnight stay in tourist accommodation per 100 inhabitants; 
 
 Passengers disembarked at major airports (in millions of passengers). 
+
+
+
+## Methodology and data
+
+Test the validity of the influence of independent variables vs the target variable - investment rate of companies - from the econometric point of view;
+
+The investment rate is an indicator of a company's effort to increase its production capacity. 
+
