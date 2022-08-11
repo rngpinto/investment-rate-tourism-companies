@@ -41,4 +41,4 @@ The investment rate is an indicator of a company's effort to increase its produc
 
 
 
-*Keywords*: Multiple Linear Regression, Econometric Models, Predictive Analysis, Turismo de Portugal, STATA, python
+### Keywords: Multiple Linear Regression, Econometric Models, Predictive Analysis, Turismo de Portugal, STATA, python
