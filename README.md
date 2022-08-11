@@ -1,7 +1,7 @@
 # predictive-analysis-with-STATA
 Predictive Analysis for Management
 
-# Study of variables related to Tourism in Portugal
+# Analysis of variables related to Tourism in Portugal
 
 
 
