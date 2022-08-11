@@ -39,3 +39,5 @@ Test the validity of the influence of independent variables vs the target variab
 
 The investment rate is an indicator of a company's effort to increase its production capacity. 
 
+
+Keywords: Multiple Linear Regression, Econometric Models, Predictive Analysis, Turismo de Portugal, STATA, python
